@@ -1,0 +1,462 @@
+@media screen and (max-width: 1152px) {
+    #app .tabbar {
+        height: 60px;
+        padding: 0 30px;
+    }
+
+    .tabbar .tabber_main {
+        margin: 0 auto;
+    }
+
+    .tabber_main .logo {
+        margin-top: 5px;
+    }
+
+    .tabber_main .tabbar_list {
+        margin: 10px 0;
+    }
+
+    .tabber_main .tabsA:hover {
+        border-bottom: 1px solid #ffffff;
+        transition: all .2s;
+    }
+
+    .tabber_main .tabsCurrent {
+        border-bottom: 1px solid #ffffff;
+    }
+
+    .loginInfo {
+        top: 35px !important;
+        left: 850px !important;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    background-color: #f5f5f5;
+}
+
+.box {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0052D9;
+    overflow: hidden;
+}
+
+.tabbar {
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 72px;
+    width: 100%;
+    z-index: 10;
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 999;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+}
+
+.tabbar_jquery {
+    background-color: #ffffff
+}
+
+.banner {
+    position: relative;
+    padding-bottom: 19.7%;
+    background-image: url("https://cloud.iava.top/zhieasy/introduceBanner.png");
+    background-size: cover;
+    background-position: center center;
+    box-sizing: border-box;
+    height: auto;
+}
+
+.strategy {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 48.6%;
+    width: 88.89%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.strategy_title {
+    color: #ffffff;
+    font-size: 24px;
+    font-family: TencentSansW7;
+    line-height: 44px;
+}
+
+.strategy_subtitle {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 12px;
+}
+
+.tabber_main {
+    height: auto;
+    max-width: 1280px;
+    margin: 0 auto;
+    color: #fefefe;
+}
+
+.logo {
+    display: inline-block;
+    height: 52px;
+    width: 226px;
+    margin-top: 12px;
+    background-image: url("https://cloud.iava.top/zhieasy/logowhite.png");
+    background-size: cover;
+    cursor: pointer;
+}
+
+.logo_jquery {
+    background-image: url("https://cloud.iava.top/zhieasy/logoblack.png") !important;
+}
+
+.tabbar_list {
+    float: right;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.tabsA {
+    color: #fefefe;
+    margin: 0 0 0 60px;
+    padding: 4px 0;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.tabsA:hover {
+    border-bottom: 2px solid #ffffff;
+    transition: all .2s;
+}
+
+.tabsCurrent {
+    border-bottom: 2px solid #ffffff;
+}
+
+.loginbtn {
+    height: 40px;
+    padding: 9px 24px;
+    background: transparent;
+    border-radius: 4px;
+    outline: none;
+    margin-left: 48px;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+    cursor: pointer;
+    border: 1px solid #fefefe;
+    color: #fefefe;
+    transition-duration: 0.4s;
+}
+
+.loginbtn:hover {
+    background-color: #007aff;
+    border: 0;
+    transition: all .3s;
+    border: 1px solid #fefefe00 !important;
+}
+
+.hellobox {
+    padding: 8px 0px;
+    display: inline-block;
+    position: relative;
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+.hello_name {
+    max-width: 160px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.hellobox .down {
+    position: absolute;
+    right: -18px;
+    top: 11px;
+    margin-left: 6px;
+    height: 16px;
+    width: 16px;
+    background-image: url("https://cloud.iava.top/zhieasy/tabber_down_white.png");
+    background-size: cover;
+}
+
+.down_jquery {
+    background-image: url("https://cloud.iava.top/zhieasy/tabber_down_black.png") !important;
+}
+
+ul {
+    list-style: none;
+}
+
+.loginInfo {
+    top: 0;
+    left: 0;
+    padding: 4px;
+    margin: 5px 0;
+    background-color: #FFF;
+    border: 1px solid #EBEEF5;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+    z-index: 3000;
+}
+
+.loginInfo_li:not(:last-child) {
+    margin-bottom: 2px;
+}
+
+.loginInfo_li {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px 12px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.loginInfo_li:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.loginInfo_lilogo {
+    float: right;
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    background: url("https://cloud.iava.top/zhieasy/login_out.png") no-repeat center;
+    background-size: cover;
+}
+
+.part1 {
+    position: relative;
+}
+
+.fl {
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    height: 1500px;
+    padding-top: 130px;
+    padding-bottom: 320px;
+    color: #0f1011;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.fname {
+    position: relative;
+    height: 75px;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 75px;
+}
+
+.english {
+    position: relative;
+    height: 35px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 35px;
+    color: #0f1011;
+}
+
+.content {
+    position: relative;
+    z-index: 10;
+    width: 50vw;
+    min-height: 170px;
+    margin: 67px auto 0;
+    font-size: 17px;
+    line-height: 34px;
+    color: #505055;
+    text-align: left;
+    text-indent: 2em;
+}
+
+.content p {
+    margin: 0;
+    padding: 0;
+}
+
+.part2 {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    min-height: 600px;
+    padding: 0;
+    margin: -350px 0 0;
+}
+
+ul {
+    position: relative;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.part2 li {
+    position: relative;
+    width: 25%;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+img {
+    position: relative;
+    vertical-align: middle;
+    border-style: none;
+    width: 95%;
+    height: 230px;
+    margin-top: 20px;
+    margin-left: 2%;
+}
+
+.part3 {
+    height: 720px;
+    width: 100%;
+    position: relative;
+    margin-top: 96px;
+    padding: 60px 96px;
+    box-sizing: border-box;
+}
+
+.part3 .left .label {
+    position: relative;
+    width: 20%;
+    padding-left: 5%;
+    margin-top: 200px;
+    float: left;
+    font-family: Simsun;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: #2A2E2E;
+    letter-spacing: 0;
+}
+
+p {
+    position: relative;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.part3 .right:before {
+    content: ' ';
+    height: 615px;
+    width: 0.3%;
+    position: absolute;
+    left: -60px;
+    top: 30px;
+    display: block;
+    bottom: 0;
+    background: #D8D9DC;
+}
+
+.part3 .right {
+    float: right;
+    width: 70%;
+    height: 400px;
+    position: relative;
+}
+
+.part3 .right .label {
+    position: relative;
+    font-size: 20px;
+    color: #2A2E2E;
+    letter-spacing: 0;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.part3 .right .arc {
+    position: relative;
+    font-size: 14px;
+    color: #5F6464;
+    letter-spacing: 0;
+    line-height: 25px;
+    margin-top: 16px;
+}
+
+.part4 {
+    position: relative;
+    z-index: 10;
+    margin-top: 90px;
+
+}
+
+.part4 ul {
+    position: relative;
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 100px 0 205px 8%;
+    margin: 65px 0 0;
+    color: #fff;
+    background: black;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.part4 li {
+    position: relative;
+    width: 310px;
+    list-style: none;
+}
+
+.name_1 {
+    position: relative;
+    width: 230px;
+    padding-top: 17px;
+    margin-top: 23px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    border-top: 1px solid #fff;
+
+}
+
+.name_2 {
+    position: relative;
+    margin-bottom: 17px;
+    font-size: 17px;
+    line-height: 24px;
+    color: #d0d0d0;
+}
+
+.erweima {
+    width: auto;
+    height: 140px;
+    position: relative;
+}

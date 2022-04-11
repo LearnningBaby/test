@@ -1,0 +1,1140 @@
+@media screen and (max-width: 1152px) {
+    .banner .tabbar {
+        height: 60px;
+        padding: 0 30px;
+    }
+
+    .tabbar .tabber_main {
+        margin: 0 auto;
+    }
+
+    .tabber_main .logo {
+        margin-top: 5px;
+    }
+
+    .tabber_main .tabbar_list {
+        margin: 16px 0;
+    }
+
+    .tabber_main .tabsA:hover {
+        border-bottom: 1px solid #ffffff;
+        transition: all .2s;
+    }
+
+    .tabber_main .tabsCurrent {
+        border-bottom: 1px solid #ffffff;
+    }
+
+    .body_bottom .main_title,
+    .body_bottom .reason_title,
+    .body_bottom .sixCont_title {
+        margin: 72px 0 30px;
+    }
+
+    .body_bottom .box_first {
+        padding: 30px;
+        padding-top: 26px;
+    }
+
+    .main .main_title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .main .box_firstTitle {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .main .box_firstSubTitle {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .main .box_firstText {
+        font-size: 14px;
+        margin: 8px 0 16px;
+    }
+
+    .main .box_firstSubTitle {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .main .boxFirst_logo {
+        width: 22.4%;
+        height: auto;
+        padding-bottom: 22.4%;
+    }
+
+    .main .box_bottom {
+        margin: 12px 0 0px;
+    }
+
+    .main .bottombox {
+        padding: 30px;
+        padding-top: 26px;
+    }
+
+    .main .bottombox_logo {
+        top: 30px;
+        width: 11%;
+        height: auto;
+        padding-bottom: 11%;
+    }
+
+    .main .bottom_title {
+        font-size: 28px;
+        margin: 0;
+    }
+
+    .main .bottom_text {
+        font-size: 14px;
+        margin: 24px 0 16px;
+    }
+
+    .whyinzhiyi .whyinzhiyi_title {
+        margin: 72px 0 30px;
+    }
+
+    .whyinzhiyi .reason_item {
+        padding: 30px;
+    }
+
+    .whyinzhiyi .reason_title {
+        font-size: 28px;
+        margin: 24px 0 18px;
+    }
+
+    .whyinzhiyi .reason_text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .sixcontainer .sixCont_title {
+        margin: 72px 0 30px;
+    }
+
+    .sixcontainer .sixCont_item {
+        position: relative;
+        padding: 18px 0;
+    }
+
+    .sixcontainer .sixCont_code {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90px;
+        height: 90px;
+    }
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+.banner {
+    position: relative;
+    padding-bottom: 56.25%;
+    box-sizing: border-box;
+}
+
+#video {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.tabbar {
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 90px;
+    width: 100%;
+    z-index: 10;
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 999;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+}
+
+.tabbar_jquery {
+    background-color: #ffffff
+}
+
+.tabber_main {
+    height: auto;
+    max-width: 1280px;
+    margin: 0 auto;
+    color: #fefefe;
+}
+
+.XPUCSClogo {
+    display: inline-block;
+    height: 52px;
+    width: 226px;
+    margin: 0 0 45px 0;
+    background-image: url("https://cloud.iava.top/zhieasy/XPUCSCwhite.png");
+    background-size: cover;
+}
+
+.logo {
+    display: inline-block;
+    height: 70px;
+    width: 226px;
+    margin-top: 12px;
+    background-image: url("https://s3.bmp.ovh/imgs/2022/04/11/570fe19a75cfe0e7.png");
+    background-size: cover;
+    cursor: pointer;
+}
+
+.logo_jquery {
+    background-image: url("https://s3.bmp.ovh/imgs/2022/04/11/0ae597224d5b9a25.png") !important;
+}
+
+.tabbar_list {
+    float: right;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.tabsA {
+    color: #fefefe;
+    margin: 0 0 0 60px;
+    padding: 4px 0;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.tabsA:hover {
+    border-bottom: 2px solid #ffffff;
+    transition: all .2s;
+}
+
+.tabsCurrent {
+    border-bottom: 2px solid #ffffff;
+}
+
+.loginbtn {
+    height: 40px;
+    padding: 9px 24px;
+    background: transparent;
+    border-radius: 4px;
+    outline: none;
+    margin-left: 48px;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+    cursor: pointer;
+    border: 1px solid #fefefe;
+    color: #fefefe;
+    transition-duration: 0.4s;
+}
+
+.loginbtn:hover {
+    background-color: #007aff;
+    border: 0;
+    transition: all .3s;
+    border: 1px solid #fefefe00 !important;
+}
+
+.hellobox {
+    padding: 8px 0px;
+    display: inline-block;
+    position: relative;
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+.hello_name {
+    max-width: 160px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.hellobox .down {
+    position: absolute;
+    right: -18px;
+    top: 11px;
+    margin-left: 6px;
+    height: 16px;
+    width: 16px;
+    background-image: url("https://cloud.iava.top/zhieasy/tabber_down_white.png");
+    background-size: cover;
+}
+
+.down_jquery {
+    background-image: url("https://cloud.iava.top/zhieasy/tabber_down_black.png") !important;
+}
+
+.banner_content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+.banner_title {
+    width: 728px;
+    height: 130px;
+    position: relative;
+}
+
+.banner_titleLeft {
+    width: 319px;
+    height: 57px;
+    background: url("https://cloud.iava.top/zhieasy/title_left.png") no-repeat;
+    background-size: 100%;
+    float: left;
+    margin-top: 30px;
+}
+
+.banner_titleYou {
+    width: 115px;
+    height: 105px;
+    float: left;
+    background-image: url("https://cloud.iava.top/zhieasy/banner_titleYou.png");
+    background-size: cover;
+    margin: 0 21px;
+}
+
+.banner_titleRight {
+    width: 252px;
+    height: 58px;
+    background: url("https://cloud.iava.top/zhieasy/title_right.png") no-repeat;
+    background-size: 100%;
+    float: left;
+    margin-top: 30px;
+}
+
+.banner_text {
+    letter-spacing: 1px;
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.appylBtn {
+    min-width: 144px;
+    padding: 0 24px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    border-radius: 100px;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, .1);
+    backdrop-filter: blur(24px);
+    white-space: nowrap;
+    cursor: pointer;
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    -webkit-appearance: none;
+}
+
+.appylBtn:hover {
+    background: rgba(224, 224, 224, 0.306);
+}
+
+.body_bottom {
+    padding: 0 5.5%;
+    background: #f5f5f5;
+    margin-top: 0px;
+    overflow: hidden;
+}
+
+.body_bottom_main {
+    max-width: 1280px;
+    min-height: 943px;
+    padding: 0 0 120px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+
+/* zhiyiapply */
+
+.main_title {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 32px;
+    line-height: 48px;
+    margin: 96px 0 40px;
+}
+
+.bigBox {
+    display: flex;
+}
+
+.box_first {
+    position: relative;
+    flex: 1;
+    color: rgba(0, 0, 0, 0.8);
+    background-color: #ffffff;
+    padding: 48px;
+    padding-top: 44px;
+    border-radius: 24px;
+    transition: 0.35s;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.box_first:first-child {
+    margin-right: 32px;
+}
+
+#hover1 {
+    background-color: #0052D9;
+    z-index: 10;
+    flex: 1.5;
+    width: 57.26%;
+    cursor: pointer;
+    box-shadow: 0px 4px 20px 0px rgb(0 0 0 / 16%);
+}
+
+#hover1 .boxFirst_logo {
+    display: none;
+}
+
+.box_first:first-child .boxFirst_logo {
+    background-image: url("https://cloud.iava.top/zhieasy/towboxes_hover1.png");
+}
+
+.boxbtn {
+    position: absolute;
+    right: 48px;
+    top: 154px;
+    width: 128px;
+    min-width: 144px;
+    padding: 0 24px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    border-radius: 100px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    transition: 0.35s;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.boxbtn:hover {
+    background: rgba(255, 255, 255, 0.449);
+}
+
+#hover1 .box_firstTitle {
+    color: #ffffff;
+}
+
+.box_firstTitle {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 500;
+    margin-bottom: 64px;
+}
+
+#hover1 .box_firstSubTitle {
+    color: #ffffff;
+}
+
+.box_firstSubTitle {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+#hover1 .box_firstText {
+    color: #ffffff;
+}
+
+.box_firstText {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 12px 0 24px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#hover1 .box_bottom {
+    color: #ffffff;
+}
+
+.box_bottom {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 12px 0 24px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#hover1:first-child::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 47%;
+    height: 100%;
+    background-image: url("https://cloud.iava.top/zhieasy/box_hover.png");
+    background-size: cover;
+    transform: rotate(180deg);
+}
+
+.boxFirst_logo {
+    position: absolute;
+    right: 40px;
+    top: 16px;
+    width: 140px;
+    height: 140px;
+    background-image: url("https://cloud.iava.top/zhieasy/towboxes_hover2.png");
+    background-size: cover;
+}
+
+#hover2 {
+    background-color: #79c000;
+    z-index: 10;
+    flex: 1.5;
+    width: 57.26%;
+    cursor: pointer;
+    box-shadow: 0px 4px 20px 0px rgb(0 0 0 / 16%);
+}
+
+#hover2 .boxbtn {
+    opacity: 1;
+}
+
+#hover2 .box_bottom {
+    color: #ffffff;
+}
+
+#hover2 .box_firstText {
+    color: #ffffff;
+}
+
+#hover2 .box_firstSubTitle {
+    color: #ffffff;
+}
+
+#hover2 .box_firstTitle {
+    color: #ffffff;
+}
+
+#hover2::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: "";
+    width: 26.88%;
+    height: 57.27%;
+    background-image: url("https://cloud.iava.top/zhieasy/box_hover.png");
+    background-size: cover;
+}
+
+.bottombox {
+    position: relative;
+    color: rgba(0, 0, 0, 0.8);
+    background-color: rgb(253, 253, 253);
+    padding: 48px;
+    padding-top: 40px;
+    border-radius: 24px;
+    margin-top: 32px;
+    box-sizing: border-box;
+}
+
+.bottombox_CSClogo {
+    position: absolute;
+    right: 183px;
+    top: 52px;
+    width: 100px;
+    height: 100px;
+    background-image: url("https://cloud.iava.top/zhieasy/CSCsmall.jpg");
+    background-size: cover;
+}
+
+.bottombox_logo {
+    position: absolute;
+    right: 40px;
+    top: 36px;
+    width: 140px;
+    height: 140px;
+    background-image: url("https://cloud.iava.top/zhieasy/zhiyilogo.jpg");
+    background-size: cover;
+}
+
+.bottom_title {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.bottom_SubTitle {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 23px;
+    line-height: 28px;
+    font-weight: 500;
+    margin-bottom: 45px;
+}
+
+.bottom_text {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* notice */
+.notice {
+    position: relative;
+    border-radius: 16px;
+}
+
+.notice .content_title {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 32px;
+    line-height: 48px;
+    margin: 96px 0 40px;
+}
+
+.notice_content {
+    border-radius: 16px;
+    background-color: #ffffff;
+    padding: 48px 48px 30px 48px;
+}
+
+.notice_item_content {
+    display: flex;
+}
+
+.notice_item {
+    flex: 4;
+    margin: 0 10px 20px 0;
+}
+
+.notice_item_img {
+    height: 151px;
+    width: 268px;
+    border-radius: 6px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.notice_item .notice_text {
+    color: #18191C;
+    font-size: 15px;
+    line-height: 22px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+
+
+
+/* whyinzhiyi */
+
+.whyinzhiyi_title {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 32px;
+    font-family: TencentSansW7;
+    line-height: 48px;
+    margin: 96px 0 40px;
+}
+
+.reason_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -32px;
+}
+
+.reason_item {
+    flex: 0 0 31.64%;
+    padding: 40px 40px 48px;
+    border-radius: 24px;
+    background: #ffffff;
+    margin-top: 32px;
+    box-sizing: border-box;
+}
+
+.reason_img {
+    width: 76.92%;
+    padding-bottom: 61.54%;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.reason_title {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 32px;
+    font-family: TencentSansW7;
+    line-height: 48px;
+    margin: 96px 0 40px;
+}
+
+.reason_text {
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 28px;
+    font-size: 20px;
+}
+
+/* 师兄师姐说 */
+.history .content_title {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 32px;
+    line-height: 48px;
+    margin: 96px 0 40px;
+}
+
+.history_box {
+    position: relative;
+    padding-bottom: 25%;
+}
+
+.history .history_box::before {
+    position: absolute;
+    top: 0;
+    right: 63.83%;
+    width: 1000px;
+    height: 100%;
+    content: '';
+    background-color: #f5f5f5;
+    z-index: 99;
+}
+
+.history .info_box {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 38.67%;
+    padding-bottom: 19.53%;
+    border-radius: 24px;
+    background: #ffffff;
+    z-index: 99;
+    text-align: center;
+}
+
+.history .info_box .info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 9.7% 40px 40px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.info .info_content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.info .info_content .info_img {
+    position: absolute;
+    top: -70px;
+    right: 8px;
+    width: 62px;
+    height: 44px;
+    background-image: url("https://cloud.iava.top/zhieasy/home_info_img.png");
+    background-size: cover;
+}
+
+.info .info_content .text {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 500;
+    line-height: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.tag_box {
+    font-size: 0;
+}
+
+.tag_box .tag:first-child {
+    margin-left: 0;
+}
+
+.tag_box .tag {
+    color: #0052D9;
+    line-height: 20px;
+    border: 1px solid #0052D9;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 8px;
+    padding: 2px 8px;
+    display: inline-block;
+}
+
+.issuer {
+    position: absolute;
+    bottom: 0;
+}
+
+.issuer .issuer_name {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 4px;
+}
+
+.issuer .issuer_job {
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.history .swiper-container {
+    position: absolute;
+    right: 13.83%;
+    width: 50% !important;
+    margin-left: 0;
+    margin-bottom: 32px;
+    overflow: visible;
+}
+
+.swiper-container-pointer-events {
+    touch-action: pan-y;
+}
+
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.history .swiper-container::before {
+    position: absolute;
+    left: -1100px;
+    top: -10%;
+    content: '';
+    width: 1000px;
+    height: 120%;
+    background: #f5f5f5;
+    z-index: 999;
+}
+
+.swiper-wrapper {
+    transform: translateZ(0);
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+
+
+.swiper-container .swiper-slide {
+    position: relative;
+    font-size: 0;
+    width: 100% !important;
+}
+
+.swiper-container .swiper-slide-half {
+    position: relative;
+    font-size: 0;
+    width: 40% !important;
+}
+
+
+.swiper-slide,
+.swiper-slide-half {
+    flex-shrink: 0;
+    width: 100%;
+    /* height: 100%; */
+    position: relative;
+    transition-property: transform;
+    padding-right: 32px;
+}
+
+
+.swiper-slide .video_box {
+    position: relative;
+    width: 100%;
+    padding-bottom: 50%;
+    background-size: cover;
+    border-radius: 24px;
+    display: inline-block;
+}
+
+.swiper-slide-half .video_box {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    padding-bottom: 50%;
+    background-size: cover;
+    border-radius: 24px;
+    display: inline-block;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: calc(var(--swiper-navigation-size)/ 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+
+
+.history .swiper-container .swiper-button-prev {
+    left: auto;
+    right: -109px;
+    transform: rotate(180deg);
+}
+
+.history .swiper-container .swiper-button-next {
+    right: -173px;
+    background-image: url("https://cloud.iava.top/zhieasy/swiper_btn.png");
+}
+
+.history .swiper-container .swiper-button-prev,
+.history .swiper-container .swiper-button-next {
+    width: 48px;
+    height: 48px;
+    background-image: url("https://cloud.iava.top/zhieasy/swiper_btn.png");
+    background-size: cover;
+    transition: 0.35s;
+}
+
+
+.history .swiper-container .swiper-button-prev:hover,
+.history .swiper-container .swiper-button-next:hover {
+    background-image: url("https://cloud.iava.top/zhieasy/swiper_btn_hover.png");
+}
+
+/* .sixcontainer */
+
+.sixCont_title {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 32px;
+    font-family: TencentSansW7;
+    line-height: 48px;
+    margin: 96px 0 40px;
+}
+
+.sixCont_list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.sixCont_item {
+    position: relative;
+    flex: 1;
+    border-radius: 16px;
+    background-color: #ffffff;
+    padding: 55px 0;
+    margin-left: 24px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.35s;
+}
+
+.sixCont_item:hover {
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.16);
+}
+
+.sixCont_item:hover .sixCont_code {
+    opacity: 1;
+}
+
+.sixCont_item:hover .sixCont_img {
+    opacity: 0;
+}
+
+.sixCont_list .sixCont_item:first-child {
+    margin-left: 0;
+}
+
+.sixCont_code {
+    position: absolute;
+    top: 36px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 106px;
+    height: 106px;
+    background-size: cover;
+    transition: 0.35s;
+    opacity: 0;
+}
+
+.sixCont_img {
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+    opacity: 1;
+    background-size: cover;
+    margin: 0 auto;
+    transition: 0.35s;
+}
+
+.footer {
+    padding: 0 5.5% 25px;
+    background: #f0f0f0;
+}
+
+.footer_main {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 65px 0 0;
+}
+
+.footer_content {
+    padding: 24px 0 8px;
+    border-top: 1px solid #d8d8d8;
+    box-sizing: border-box;
+}
+
+.footer_content {
+    clear: both;
+}
+
+.footer_list {
+    margin-right: 168px;
+    float: left;
+}
+
+.list_title {
+    font-size: 16px;
+    margin-bottom: 24px;
+    color: #323232;
+}
+
+.list_item {
+    color: #7f7f7f;
+    font-size: 14px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.placeHold {
+    color: #f0f0f0;
+    cursor: default;
+}
+
+.footer_right {
+    float: right;
+    text-align: right;
+}
+
+.footer_CSClogo {
+    width: 243px;
+    height: 56px;
+    background-image: url("https://cloud.iava.top/zhieasy/CSC.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer_logo {
+    width: 243px;
+    height: 56px;
+    margin-top: 15px;
+    background-image: url("https://cloud.iava.top/zhieasy/logoblack.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.powerBy {
+    font-size: 14px;
+    color: #323232;
+    padding-top: 17px;
+    border-top: 1px solid #d8d8d8;
+}
+
+.powerBy {
+    clear: both;
+}
+
+ul {
+    list-style: none;
+}
+
+.loginInfo {
+    top: 0;
+    left: 0;
+    padding: 4px;
+    background-color: #FFF;
+    border: 1px solid #EBEEF5;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+}
+
+.loginInfo_li:not(:last-child) {
+    margin-bottom: 2px;
+}
+
+.loginInfo_li {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px 12px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.loginInfo_li:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.loginInfo_lilogo {
+    float: right;
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    background: url("https://cloud.iava.top/zhieasy/login_out.png") no-repeat center;
+    background-size: cover;
+}

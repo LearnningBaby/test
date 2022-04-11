@@ -1,0 +1,36 @@
+server:
+  port: 8089
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/exam?serverTimezone=UTC
+    username: root
+    password: root
+  application:  #配置服务名称
+    name: teacherservice
+      #配置nacos注册中心
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+  main:
+    banner-mode: off
+  redis:
+    host: localhost
+    port: 6379
+    database: 2
+
+logging:
+  level:
+    cn.itcast: debug
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
+mybatis-plus:
+  configuration:
+    #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+    call-setters-on-nulls: true
+  type-aliases-package: com.teacher.domain
+  global-config:
+    banner: off
+
+
